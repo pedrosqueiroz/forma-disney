@@ -8,8 +8,15 @@ import { Component, OnInit } from '@angular/core';
 export class HeaderComponent implements OnInit {
 
   constructor() { }
-
-  ngOnInit() {
-  }
+  showMenu = () => {
+    var menu = (<HTMLDListElement>document.querySelector('ul'));
+    menu.style.display = 'flex';
+    menu.style.flexDirection = 'column';
+    console.log(menu);
+    
+}
+ngOnInit() {
+  
+}
 
 }

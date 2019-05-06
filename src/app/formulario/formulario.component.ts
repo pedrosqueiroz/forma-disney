@@ -35,6 +35,11 @@ export class FormularioComponent implements OnInit {
   }
 
   ngOnInit() {
-  }
+    //Quantidade de caracteres restantes no campo message
+    document.querySelector('#message').addEventListener("keyup", event => {
+      (<HTMLInputElement>document.querySelector('#message')).value.length;
+      return;
+    });
 
+  }
 }
