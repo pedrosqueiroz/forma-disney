@@ -1,0 +1,61 @@
+section {
+  width: 100%;
+  height: 100vh;
+  background-image: url(/assets/images/festas/background.png);
+  background-size: cover;
+
+  .row {
+    display: flex;
+
+    &.-festas {
+      max-width: 85vw;
+      margin: 0 auto;
+    }
+
+    .col {
+      padding: 1em 2em;
+      color: white;
+      margin: 0 auto;
+      display: flex;
+
+      &.-festa {
+        flex-direction: column;
+        max-width: 20%;
+
+        .card {
+          margin: 5em auto 0 auto;
+
+          &.-festa {
+            .card-image {
+              display: flex;
+
+              img {
+                margin: 0 auto;
+              }
+            }
+
+            .card-text {
+              display: flex;
+
+              p {
+                margin: auto 0;
+                padding: 2em 0;
+                text-align: center;
+                line-height: 1.3;
+              }
+            }
+
+          }
+
+        }
+      }
+
+      h1 {
+        margin: 0 auto;
+        font-size: 3em;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+    }
+  }
+}

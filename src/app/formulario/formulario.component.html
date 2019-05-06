@@ -1,0 +1,33 @@
+<section>
+  <div class="row">
+    <div class="col -formulario">
+      <img src="/assets/images/formulario/vem-pra-disney.png" alt="">
+      <p>Preencha o formulário abaixo e entraremos em contato!</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <form [formGroup]="messageForm" (ngSubmit)="onSubmit">
+        <input type="text" formControlName="name" placeholder="NOME COMPLETO">
+        <input type="text" formControlName="email" placeholder="EMAIL">
+        <input type="text" formControlName="school" placeholder="ESCOLA">
+        <div [ngClass]="'input-group'">
+          <div [ngClass]="'input-group -w6'">
+            <input type="text" formControlName="city" placeholder="CIDADE">
+          </div>
+          <div [ngClass]="'input-group -w4'">
+            <input type="text" formControlName="state" placeholder="ESTADO">
+          </div>
+        </div>
+        <input type="phone" formControlName="phone" placeholder="TELEFONE">
+        <textarea name="message" id="message" cols="30" rows="7" placeholder="MENSAGEM"></textarea>
+        <button type="submit">ENVIAR</button>
+
+        <!-- <div *ngIf="messageForm.controls.name.errors.required">Por favor, preecha seu nome corretamente.</div> -->
+
+
+
+      </form>
+    </div>
+  </div>
+</section>
