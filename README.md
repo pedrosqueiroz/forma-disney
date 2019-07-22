@@ -1,7 +1,4 @@
 # Angular & WP API event landing page
-
-Study purposes
----
  To-dos:
   * Fix mobile menu
   * Improve overall mobile layout
