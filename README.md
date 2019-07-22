@@ -1,5 +1,8 @@
-# FormaDisney
-To-dos:
+# Angular & WP API event landing page
+
+Study purposes
+---
+ To-dos:
   * Fix mobile menu
   * Improve overall mobile layout
   * Fetch data from WP-API to *festas* and *parques* sections
